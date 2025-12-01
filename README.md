@@ -65,9 +65,8 @@ Este aplicativo tem como objetivo gerenciar as rotas de transporte escolar, perm
     *   **ViewBinding:** Para acessar as views do layout de forma segura.
 *   **Material Design:** Para os componentes de interface do usuário.
 *   **CircleImageView:** Para exibir imagens em formato circular.
-*   Integração com API ViaCEP
-
-O aplicativo conta com uma integração simples utilizando Retrofit para realizar consultas de endereço a partir do CEP informado pelo usuário. Essa funcionalidade permite preencher automaticamente campos como rua, bairro, cidade e estado durante o cadastro de responsáveis, condutores ou escolas.
+*   **Integração com API ViaCEP:**  
+    Implementada utilizando Retrofit para realizar consultas de endereço a partir do CEP, retornando os dados automaticamente através da API pública ViaCEP.
 
 Funcionamento
 
@@ -97,4 +96,4 @@ Todas as informações são armazenadas localmente em um banco de dados Room. As
 *   **Ronaldo** - RA: 2403661
 *   **Luis** - RA: 2402947
 *   **Maycon** - RA: 2402929
-# EntregaAppRotas
+
