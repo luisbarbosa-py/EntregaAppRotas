@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Cadastros" />
+        <item
+            android:id="@+id/nav_alunos"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Alunos" />
+        <item
+            android:id="@+id/nav_responsaveis"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Responsáveis" />
+        <item
+            android:id="@+id/nav_turmas"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Turmas" />
+        <item
+            android:id="@+id/nav_condutores"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Condutores" />
+        <item
+            android:id="@+id/nav_escolas"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Escolas" />
+    </group>
+</menu>

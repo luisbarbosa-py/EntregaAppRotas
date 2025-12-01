@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Roteiro</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Cadastros</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="contato">Contato</string>
+    <string name="contatos">Contatos</string>
+    <string name="rotas_oda">Rotas Oda</string>
+    <string name="odavita32_gmail_com">odavita32@gmail.com</string>
+    <string name="chamada">Chamada</string>
+    <string name="cadastro_de_turma">Cadastros</string>
+    <string name="turma">Turma</string>
+    <string name="teste">teste</string>
+    <string name="cadastrar_aluno">Cadastrar Aluno</string>
+    <string name="cadastrar_responsaveis">Cadastrar Responsaveis</string>
+    <string name="cadastrar_turma">Cadastrar Turma</string>
+    <string name="cadastrar_escola">Cadastrar escola</string>
+    <string name="cadastrar_condutor">Cadastrar Condutor</string>
+    <string name="cadastrar_escola2">Cadastrar escola</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="turnos_array">
+        <item>Manhã</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+    </string-array>
+
+    <string-array name="periodos_escola_array">
+        <item>Manhã</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+        <item>Manhã e Tarde</item>
+        <item>Manhã, Tarde e Noite</item>
+    </string-array>
+</resources>

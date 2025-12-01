@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alunos.AlunosFragment">
+
+    <!-- Seletor de Responsável (Primeiro campo) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutResponsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Digite o nome do Responsável"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campos de preenchimento automático -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEnderecoResponsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Endereço"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutResponsavel"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutResponsavel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutResponsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEnderecoResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutNumeroResponsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Número"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutEnderecoResponsavel"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutEnderecoResponsavel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEnderecoResponsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumeroResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutBairroResponsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Bairro"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutNumeroResponsavel"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutNumeroResponsavel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNumeroResponsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextBairroResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTelefoneResponsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Telefone do Responsável"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutBairroResponsavel"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutBairroResponsavel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBairroResponsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTelefoneResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campos de preenchimento manual -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutNomeAluno"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome do Aluno"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutTelefoneResponsavel"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutTelefoneResponsavel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTelefoneResponsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNomeAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEscola"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Escola"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutNomeAluno"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutNomeAluno"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNomeAluno">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEscola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTurno"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Selecione o Turno"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutEscola"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutEscola"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEscola">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Salvar Aluno"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutTurno"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutTurno"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTurno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

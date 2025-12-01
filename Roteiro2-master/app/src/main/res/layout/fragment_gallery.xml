@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logorotas"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAlunos"
+        android:layout_width="108dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/cadastrar_aluno"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cad_aluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonResponsaveis"
+        android:layout_width="108dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/cadastrar_turma"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cad_responsaveis"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAlunos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTurma"
+        android:layout_width="108dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/cadastrar_responsaveis"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cad_turma"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonAlunos"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAlunos" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEscola"
+        android:layout_width="108dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/cadastrar_escola"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cad_escola"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonResponsaveis"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonResponsaveis" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCondutor"
+        android:layout_width="108dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/cadastrar_condutor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cad_condutor"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonTurma"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonTurma" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

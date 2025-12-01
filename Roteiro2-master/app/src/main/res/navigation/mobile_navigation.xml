@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.roteiro.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.roteiro.ui.login.RegisterFragment"
+        android:label="Registrar"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.roteiro.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.roteiro.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_alunosHubFragment"
+            app:destination="@id/alunosHubFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_responsaveisHubFragment"
+            app:destination="@id/responsaveisHubFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_cadastrarTurmaFragment"
+            app:destination="@id/cadastrarTurmaFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_cadastrarEscolaFragment"
+            app:destination="@id/cadastrarEscolaFragment" />
+        <action
+            android:id="@+id/action_nav_gallery_to_cadastrarCondutorFragment"
+            app:destination="@id/cadastrarCondutorFragment" />
+    </fragment>
+
+    <!-- Telas Principais do Menu -->
+    <fragment
+        android:id="@+id/nav_alunos"
+        android:name="com.example.roteiro.ui.alunos.ListaAlunosFragment"
+        android:label="Alunos"
+        tools:layout="@layout/fragment_lista_alunos" >
+        <action
+            android:id="@+id/action_listaAlunosFragment_to_editAlunoFragment"
+            app:destination="@id/editAlunoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_responsaveis"
+        android:name="com.example.roteiro.ui.responsaveis.ListaResponsaveisFragment"
+        android:label="Responsáveis"
+        tools:layout="@layout/fragment_lista_responsaveis" >
+        <action
+            android:id="@+id/action_listaResponsaveisFragment_to_editResponsavelFragment"
+            app:destination="@id/editResponsavelFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/nav_turmas"
+        android:name="com.example.roteiro.ui.turma.ListaTurmasFragment"
+        android:label="Turmas"
+        tools:layout="@layout/fragment_lista_turmas" >
+        <action
+            android:id="@+id/action_listaTurmasFragment_to_editTurmaFragment"
+            app:destination="@id/editTurmaFragment" />
+        <action
+            android:id="@+id/action_listaTurmasFragment_to_turmaAlunosFragment"
+            app:destination="@id/turmaAlunosFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/nav_condutores"
+        android:name="com.example.roteiro.ui.condutor.ListaCondutoresFragment"
+        android:label="Condutores"
+        tools:layout="@layout/fragment_lista_condutores" />
+
+    <fragment
+        android:id="@+id/nav_escolas"
+        android:name="com.example.roteiro.ui.escola.ListaEscolasFragment"
+        android:label="Escolas"
+        tools:layout="@layout/fragment_lista_escolas" />
+
+    <!-- Gerenciamento de Alunos na Turma -->
+    <fragment
+        android:id="@+id/turmaAlunosFragment"
+        android:name="com.example.roteiro.ui.turma.TurmaAlunosFragment"
+        android:label="Alunos da Turma"
+        tools:layout="@layout/fragment_turma_alunos">
+        <argument
+            android:name="turmaId"
+            app:argType="long" />
+    </fragment>
+
+
+    <!-- Hubs de Cadastro -->
+    <fragment
+        android:id="@+id/alunosHubFragment"
+        android:name="com.example.roteiro.ui.alunos.AlunosHubFragment"
+        android:label="Hub de Alunos">
+        <action
+            android:id="@+id/action_alunosHubFragment_to_alunosFragment"
+            app:destination="@id/alunosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/responsaveisHubFragment"
+        android:name="com.example.roteiro.ui.responsaveis.ResponsaveisHubFragment"
+        android:label="Hub de Responsáveis">
+        <action
+            android:id="@+id/action_responsaveisHubFragment_to_cadastrarResponsavelFragment"
+            app:destination="@id/cadastrarResponsavelFragment" />
+    </fragment>
+
+    <!-- Fluxos de Cadastro e Edição -->
+    <fragment
+        android:id="@+id/cadastrarResponsavelFragment"
+        android:name="com.example.roteiro.ui.responsaveis.CadastrarResponsavelFragment"
+        android:label="Cadastrar Responsável"
+        tools:layout="@layout/fragment_cadastrar_responsavel" />
+
+    <fragment
+        android:id="@+id/alunosFragment"
+        android:name="com.example.roteiro.ui.alunos.AlunosFragment"
+        android:label="Cadastrar Aluno"
+        tools:layout="@layout/fragment_alunos" />
+
+    <fragment
+        android:id="@+id/editAlunoFragment"
+        android:name="com.example.roteiro.ui.alunos.EditAlunoFragment"
+        android:label="Editar Aluno"
+        tools:layout="@layout/fragment_edit_aluno">
+        <argument
+            android:name="alunoId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editResponsavelFragment"
+        android:name="com.example.roteiro.ui.responsaveis.EditResponsavelFragment"
+        android:label="Editar Responsável"
+        tools:layout="@layout/fragment_edit_responsavel">
+        <argument
+            android:name="responsavelId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastrarTurmaFragment"
+        android:name="com.example.roteiro.ui.turma.CadastrarTurmaFragment"
+        android:label="Cadastrar Turma"
+        tools:layout="@layout/fragment_cadastrar_turma" />
+        
+    <fragment
+        android:id="@+id/editTurmaFragment"
+        android:name="com.example.roteiro.ui.turma.EditTurmaFragment"
+        android:label="Editar Turma"
+        tools:layout="@layout/fragment_edit_turma">
+        <argument
+            android:name="turmaId"
+            app:argType="long" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/cadastrarCondutorFragment"
+        android:name="com.example.roteiro.ui.condutor.CadastrarCondutorFragment"
+        android:label="Cadastrar Condutor"
+        tools:layout="@layout/fragment_cadastrar_condutor" />
+
+    <fragment
+        android:id="@+id/cadastrarEscolaFragment"
+        android:name="com.example.roteiro.ui.escola.CadastrarEscolaFragment"
+        android:label="Cadastrar Escola"
+        tools:layout="@layout/fragment_cadastrar_escola" />
+
+    <!-- Outros Itens (Exemplos) -->
+    <fragment
+        android:id="@+id/turmaFragment"
+        android:name="com.example.roteiro.TurmaFragment"
+        android:label="fragment_turma"
+        tools:layout="@layout/fragment_turma" />
+    <fragment
+        android:id="@+id/escolaFragment"
+        android:name="com.example.roteiro.EscolaFragment"
+        android:label="fragment_escola"
+        tools:layout="@layout/fragment_escola" />
+    <fragment
+        android:id="@+id/condutoresFragment"
+        android:name="com.example.roteiro.CondutoresFragment"
+        android:label="fragment_condutores"
+        tools:layout="@layout/fragment_condutores" />
+
+</navigation>
