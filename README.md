@@ -60,7 +60,6 @@ Este aplicativo tem como objetivo gerenciar as rotas de transporte escolar, perm
 *   **Kotlin:** Linguagem de programação principal.
 *   **Android Jetpack:**
     *   **Room:** Para persistência de dados local (banco de dados).
-    *   **Lifecycle (ViewModel e LiveData):** Para gerenciar o ciclo de vida dos componentes da interface e os dados.
     *   **Navigation Component:** Para gerenciar a navegação entre as telas do app.
     *   **ViewBinding:** Para acessar as views do layout de forma segura.
 *   **Material Design:** Para os componentes de interface do usuário.
