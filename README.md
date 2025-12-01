@@ -6,12 +6,8 @@ Este aplicativo tem como objetivo gerenciar as rotas de transporte escolar, perm
 
 ## Telas Principais
 
-### Tela Principal
+### Tela de login
 <img width="265" height="462" alt="tela-principal" src="https://github.com/user-attachments/assets/4b2a48f3-4ecb-4404-8be0-259d18a555ab" />
-
-
-### Tela de Login
-<img width="261" height="528" alt="tela-login" src="https://github.com/user-attachments/assets/73051ee4-897f-459d-b6b1-a3f7c6193928" />
 
 
 ### Tela Home
