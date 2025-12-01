@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mapa_da_escola"
+    android:background="@drawable/PlanoDeFundo"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -32,34 +32,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:gravity="center"
         android:shadowColor="@android:color/black"
-        android:textStyle="bold"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="4"
         android:text="A solução completa para organizar sua rota de transporte escolar. Cadastre alunos, gerencie responsáveis e tenha controle total dos seus clientes em um só lugar, de forma fácil e prática."
         android:textColor="@color/black"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_presentation_title" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image_member1"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="4dp"
-        android:src="@android:drawable/ic_menu_camera"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp"
-        app:layout_constraintEnd_toStartOf="@+id/image_member2"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_team_title" />
 
     <TextView
         android:id="@+id/textView3"
@@ -77,11 +64,23 @@
         app:layout_constraintStart_toStartOf="@id/image_member1"
         app:layout_constraintTop_toBottomOf="@+id/image_member1" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_member2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="4dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_member3"
+        app:layout_constraintStart_toEndOf="@id/image_member1"
+        app:layout_constraintTop_toTopOf="@+id/image_member1" />
+
     <TextView
         android:id="@+id/text_team_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="68dp"
         android:shadowColor="@android:color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -91,20 +90,33 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_presentation_description" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image_member2"
+        android:id="@+id/image_member1"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_marginTop="8dp"
         android:src="@android:drawable/ic_menu_camera"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
-        app:layout_constraintEnd_toStartOf="@+id/image_member3"
-        app:layout_constraintStart_toEndOf="@id/image_member1"
+        app:layout_constraintEnd_toStartOf="@+id/image_member2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_team_title" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_member3"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="4dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_member2"
         app:layout_constraintTop_toTopOf="@+id/image_member1" />
 
     <TextView
@@ -122,17 +134,6 @@
         app:layout_constraintEnd_toEndOf="@+id/image_member2"
         app:layout_constraintStart_toStartOf="@+id/image_member2"
         app:layout_constraintTop_toBottomOf="@+id/image_member2" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image_member3"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:src="@android:drawable/ic_menu_camera"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/image_member2"
-        app:layout_constraintTop_toTopOf="@+id/image_member1" />
 
     <TextView
         android:id="@+id/textView5"
