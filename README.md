@@ -15,7 +15,8 @@ Este aplicativo tem como objetivo gerenciar as rotas de transporte escolar, perm
 
 
 ### Tela Home
-<img width="259" height="526" alt="tela-home" src="https://github.com/user-attachments/assets/99a8c582-77a5-4085-b43a-f241da669a52" />
+<img width="336" height="703" alt="home" src="https://github.com/user-attachments/assets/4c88e42c-e409-4e2a-aea7-ef32257f8f5a" />
+
 
 
 ### Lista de Turmas
